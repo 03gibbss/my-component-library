@@ -1,5 +1,8 @@
 {
-  "name": "my-component-library",
+  "name": "@03gibbss/my-component-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/03gibbss"
+  },
   "version": "1.0.0",
   "description": "A simple React Component Library",
   "main": "index.js",
