@@ -6,6 +6,7 @@ Additions from this tutorial: https://github.com/HarveyD/react-component-library
 
 ---
 
-Variables can be used in projects consuming the library by adding this import to scss files:
+Variables and typography can be used in projects consuming the library by adding this import to scss files:
 
 @import "~@03gibbss/my-component-library/dist/variables";
+@import "~@03gibbss/my-component-library/dist/typography";

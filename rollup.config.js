@@ -40,13 +40,6 @@ export default [
       }),
       postcss(),
       terser(),
-    ],
-  },
-  {
-    input: "dist/esm/types/index.d.ts",
-    output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [
-      dts(),
       copy({
         targets: [
           {
@@ -54,9 +47,19 @@ export default [
             dest: "dist",
             rename: "variables.scss",
           },
+          {
+            src: "src/typography.scss",
+            dest: "dist",
+            rename: "typography.scss",
+          },
         ],
       }),
     ],
+  },
+  {
+    input: "dist/esm/types/index.d.ts",
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
+    plugins: [dts()],
     external: [/\.(css|less|scss)$/],
   },
 ];
