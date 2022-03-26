@@ -1,8 +1,77 @@
 @import "../../variables.scss";
 @import "../../typography.scss";
 
-button {
-  font-size: 60px;
-  color: red;
-  background-color: $blue;
+.btn {
+  font-family: $font-family;
+  font-size: 16px;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 16px;
+  background-color: $default-background-color;
+  outline: none;
+  box-shadow: 0 0 4px #999;
+  transition: background 0.8s;
+  background-position: center;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($default-background-color, 10%)
+        radial-gradient(
+          circle,
+          transparent 1%,
+          lighten($default-background-color, 10%) 1%
+        )
+        center/15000%;
+    }
+
+    &:active {
+      background-color: lighten($default-background-color, 25%);
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+
+    &:not(:disabled) {
+      &:hover {
+        background: lighten($primary, 10%)
+          radial-gradient(circle, transparent 1%, lighten($primary, 10%) 1%)
+          center/15000%;
+      }
+
+      &:active {
+        background-color: lighten($primary, 25%);
+        background-size: 100%;
+        transition: background 0s;
+      }
+    }
+  }
+
+  &.btn-success {
+    background-color: $success;
+
+    &:not(:disabled) {
+      &:hover {
+        background: lighten($success, 10%)
+          radial-gradient(circle, transparent 1%, lighten($success, 10%) 1%)
+          center/15000%;
+      }
+
+      &:active {
+        background-color: lighten($success, 25%);
+        background-size: 100%;
+        transition: background 0s;
+      }
+    }
+  }
 }

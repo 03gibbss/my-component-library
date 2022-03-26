@@ -8,3 +8,21 @@ describe("Button", () => {
     render(<Button label="Hello world!" />);
   });
 });
+
+describe("Button", () => {
+  test("renders the Button component with the primary variant", () => {
+    render(<Button variant="primary" label="Hello world!" />);
+  });
+});
+
+describe("Button", () => {
+  test("renders the Button component with the success variant", () => {
+    render(<Button variant="success" label="Hello world!" />);
+  });
+});
+
+describe("Button", () => {
+  test("renders the disabled Button component", () => {
+    render(<Button disabled label="Hello world!" />);
+  });
+});
