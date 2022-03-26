@@ -3,14 +3,15 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/03gibbss"
   },
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple React Component Library",
   "main": "dist/cjs/index.js",
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "create-component": "node ./util/create-component"
   },
   "author": "Sam Gibbs",
   "license": "ISC",
