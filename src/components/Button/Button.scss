@@ -1,4 +1,7 @@
+@import "../../variables.scss";
+
 button {
   font-size: 60px;
   color: red;
+  background-color: $blue;
 }

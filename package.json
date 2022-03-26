@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/03gibbss"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple React Component Library",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -40,6 +40,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "rollup": "^2.70.1",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
