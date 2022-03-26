@@ -17,4 +17,5 @@ Publish library with: npm publish
 Variables and typography can be used in projects consuming the library by adding this import to scss files:
 
 @import "~@03gibbss/my-component-library/dist/variables";
+
 @import "~@03gibbss/my-component-library/dist/typography";
