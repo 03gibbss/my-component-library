@@ -10,6 +10,10 @@ Easily add new components with: npm run create-component ComponentName
 
 ---
 
+Publish library with: npm publish
+
+---
+
 Variables and typography can be used in projects consuming the library by adding this import to scss files:
 
 @import "~@03gibbss/my-component-library/dist/variables";

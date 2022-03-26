@@ -33,6 +33,18 @@ generatedTemplates.forEach((template) => {
   }
 });
 
+fs.appendFile(
+  `./src/components/index.ts`,
+  `\nexport { default as ${componentName} } from "./${componentName}";`,
+  (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("Successfully updated index.js");
+    }
+  }
+);
+
 console.log(
   "Successfully created component under: " + componentDirectory.green
 );
